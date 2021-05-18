@@ -41,9 +41,9 @@ class CommandList:
 
             if app_name in settings.APPS.keys():
                 subprocess.run(r'start "" "{}"'.format(settings.APPS[app_name]), shell=True)
-                self.handler.tts("Started app: \"{}\"".format(app_name))
+                self.handler.tts('Started app: "{}"'.format(app_name))
             else:
-                self.handler.tts("Unknown app: \"{}\"".format(app_name))
+                self.handler.tts('Unknown app: "{}"'.format(app_name))
 
     class CSearchFor(Command):
         def __init__(self, handler):

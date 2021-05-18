@@ -1,4 +1,4 @@
 from handler import Handler
 
-h = Handler("python")
+h = Handler(prefix="python")
 h.start()
